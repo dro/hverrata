@@ -1,7 +1,7 @@
 # hverrata
-An extensible test suite for x86 hypervisor development that tests for common implementation oversights and errata out of the box.
 
 ## Overview
+An extensible test suite for x86 hypervisor development that tests for common implementation oversights and errata out of the box.
 The default provided interface for the test cases is designed to be ran in a UEFI boot services guest application.
 All test cases execute under using an internal guest IDT that supports simple exception handling, and a paging environment with designated scratch regions and PTEs allowing test cases to easily test paging and cache related behaviour.
 Processor state that may be clobbered or modified by a test case is automatically backed up and restored by the main test dispatcher function.
@@ -15,7 +15,7 @@ Each test is given access to the internal test context which allows the test to 
       - Tests if PCID-local translations are properly preserved when switching between PCIDs.
         Uses the scratch page PTEs to populate the TLB with different cached translation for a page between two PCIDs,
         and ensures that the cached translation of the first PCID isn't invalidated when switching back and forth between the second PCID.
-     - **HvErrataPcid02**
+    - **HvErrataPcid02**
       - Test for proper support of INVPCID if support for PCID is advertised through cpuid.
       - Basic test to ensure that INVPCID doesn't trigger an exception if support is advertised through cpuid (and PCID is enabled).
       - Uses a similar strategy involving the scratch PTEs as HvErrataPcid01, but ensures that INVPCID does not invalidate cached translations of PCID's other than the one specified in the input descriptor.
