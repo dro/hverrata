@@ -13,9 +13,9 @@ HV_ERRATA_CONTEXT STRUCT
     ScratchResult2      dq ?
     ScratchResult3      dq ?
     InterruptVector	    dq ?
-	InterruptErrorCode  dq ?
-	InterruptAbort      dq ?
-	InterruptRip        dq ?
+    InterruptErrorCode  dq ?
+    InterruptAbort      dq ?
+    InterruptRip        dq ?
 HV_ERRATA_CONTEXT ENDS
 
 EH_SET MACRO ctx, value
