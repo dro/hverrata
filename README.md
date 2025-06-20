@@ -1,7 +1,7 @@
 # hverrata
-An extensible test suite for x86 hypervisor development that tests for common implementation oversights and errata out of the box.
 
 ## Overview
+An extensible test suite for x86 hypervisor development that tests for common implementation oversights and errata out of the box.
 The default provided interface for the test cases is designed to be ran in a UEFI boot services guest application.
 All test cases execute under using an internal guest IDT that supports simple exception handling, and a paging environment with designated scratch regions and PTEs allowing test cases to easily test paging and cache related behaviour.
 Processor state that may be clobbered or modified by a test case is automatically backed up and restored by the main test dispatcher function.
