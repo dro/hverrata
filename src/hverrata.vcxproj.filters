@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hverrata_common.inc">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hverrata_isr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hverrata_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hverrata_uefi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hverrata_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hverrata_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hverrata_ia32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hverrata_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hverrata_uefi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="hverrata_cpuid.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_cr.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_invd.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_isr.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_msr.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_pcid.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_vmx.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_xstate.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_test.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="hverrata_arch.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
