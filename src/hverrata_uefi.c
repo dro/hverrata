@@ -114,6 +114,7 @@ HvErrataUefiMain(
                 HvErrataUefiPrintUInt64( System, ( UINT64 )j );
                 HvErrataUefiPrintString16( System, L": 0x" );
                 HvErrataUefiPrintUInt64( System, Error->InternalResults[ j ] );
+                HvErrataUefiPrintString16( System, L"\r\n" );
             }
             if( Error->IsUnhandledInterrupt ) {
                 HvErrataUefiPrintString16( System, L"[HVERR]  Test case aborted due to unhandled interrupt:\r\n" );
